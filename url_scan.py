@@ -48,4 +48,15 @@ print ('Remoção de url duplicadas concluida' )
 
 print ('\n <==========================> Resolvendo Hosts <==========================>\n')
 
+for i in url_list:
+
+        if re.search('\\bhttps\\b',i , re.IGNORECASE):
+                resolve = socket.gethostbyname(i[8:])
+                print ('-----------------------------------------------------------------------------')
+                print ('\nURL :', i , ' <==> IP HOST :',resolve)
+        else:
+                resolve = socket.gethostbyname(i[7:])
+                print ('-----------------------------------------------------------------------------')
+                print ('\nURL :', i , ' <==> IP HOST :',resolve)
+
 index.close()
