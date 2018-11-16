@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+#! Criador : Francisco Santana Cardoso 
+#! COntato : fsantanagy@gmail.com
+
+
 import urllib.request
 import sys
 import socket
@@ -42,15 +47,5 @@ url_list.sort()
 print ('Remoção de url duplicadas concluida' )
 
 print ('\n <==========================> Resolvendo Hosts <==========================>\n')
-
-#for i in url_list :
-	#if 'https:' in i :
-		#url = i [9:]
-	#host = socket.gethostbyname(i)
-	#print (url)
-	#if 'https://' in i :
-		
-
-#print (url_list)
 
 index.close()
